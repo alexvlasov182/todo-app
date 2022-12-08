@@ -8,7 +8,7 @@ test:
 	go test -v ./...
 
 migrate:
-	migrate -path ./schema -database 'postgres://postgres:qwerty@172.23.0.1:5436/postgres?sslmode=disable' up
+	migrate -path ./schema -database 'postgres://postgres:qwerty@172.20.0.1:5436/postgres?sslmode=disable' up
 
 swag:
 	swag init -g cmd/main.go
